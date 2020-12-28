@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="res/bootstrap@5.0.0-alpha2.min.css">
+    <link rel="stylesheet" href="res/chartist.min.css">
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+</head>
+<body>
+  <header>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programming languages
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">C++</a></li>
+            <li><a class="dropdown-item" href="#">Java</a></li>
+            <li><a class="dropdown-item" href="#">Python</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="blog.html" tabindex="-1" aria-current="true">Blog</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+       </form>
+      </div>
+     </div>
+    </nav>
+  
+   </header>
+    <div class="grid-container">
+     <div class="item2 grid-item">
+      <h1>
+       <a class="navbar-brand" href="blog.html">
+               My blog
+       </a> 
+      </h1>
+     </div>
+     <div class="grid-item item3">
+       <article>
+        <span class="date day"> Date: 18th Dec 2020</span><br />
+        <span class="day">Day: Friday</span><br />
+        <span class="content" id="1">It was a nice day . Today, I worked till 12 noon in the new house .Then, I played from around 2pm to 4pm.</span><br />
+        <script>
+         next="It was a nice day. Today, I worked till 12 noon. Then, I played from around 2pm to 4pm. Then, tution and in tution I studied Probability and faired factorisation . After all, I started coding , I today learned Bubble sort algo and pracised Selection sort. Now, my mind is bogling for JS and Python. But , I would try to keep joined to C++.";
+         i="1";
+         function read(next,i){
+         x=document.getElementById(i);
+         x.innerText=next;
+         }
+        </script>
+        <button onclick="read(next,i)">Read more...</button>
+       </article>
+        <article>
+        <span class="date day"> Date: 18th Dec 2020</span><br />
+        <span class="day">Day: Friday</span><br />
+        <span class="content" id="1">It was a nice day . Today, I worked till 12 noon in the new house .Then, I played from around 2pm to 4pm.</span><br />
+        <script>
+         next="It was a nice day. Today, I worked till 12 noon. Then, I played from around 2pm to 4pm. Then, tution and in tution I studied Probability and faired factorisation . After all, I started coding , I today learned Bubble sort algo and pracised Selection sort. Now, my mind is bogling for JS and Python. But , I would try to keep joined to C++.";
+         i="1";
+         function read(next,i){
+         x=document.getElementById(i);
+         x.innerText=next;
+         }
+        </script>
+        <button onclick="read(next,i)">Read more...</button>
+       </article>
+        <article>
+        <span class="date day"> Date: 18th Dec 2020</span><br />
+        <span class="day">Day: Friday</span><br />
+        <span class="content" id="1">It was a nice day . Today, I worked till 12 noon in the new house .Then, I played from around 2pm to 4pm.</span><br />
+        <script>
+         next="It was a nice day. Today, I worked till 12 noon. Then, I played from around 2pm to 4pm. Then, tution and in tution I studied Probability and faired factorisation . After all, I started coding , I today learned Bubble sort algo and pracised Selection sort. Now, my mind is bogling for JS and Python. But , I would try to keep joined to C++.";
+         i="1";
+         function read(next,i){
+         x=document.getElementById(i);
+         x.innerText=next;
+         }
+        </script>
+        <button onclick="read(next,i)">Read more...</button>
+       </article>
+      </div>
+     </div>       
+  
+
+     <footer class="grid-item item5">
+       &#169; Aditya kumar
+       
+     </footer>
+
+
+
+
+
+
+
+
+
+      <!--CDNs-->  
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
+    <link rel="stylesheet" href="login.css">
+    <title>Login/Sign-up</title>
+</head>
+
+<body>
+   <form class="form_container" action="backend" method="POST">
+     <h1>Login</h1>
+     <div class="container">
+       <div class="email"></div>
+     <input type="email" name="login_email" id="login_email" required class="form_item item1" placeholder="Email" onclick="ghi()"/>
+     </div>
+     <input type="password" name="login_pass" id="login_pass" required class="form_item item2" placeholder="Password"/><br />
+     <input type="submit" name="login_sub" id="login_sub" value="Submit" class="form_item item3" />
+     </div>
+   </form>
+    <script>
+      function ghi(){
+        let x=document.getElementsByClassName("item2");
+        x.style.margin="8px";
+      }
+    </script>
+  </body>
+
+</html>
