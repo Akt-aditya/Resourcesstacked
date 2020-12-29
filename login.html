@@ -6,26 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
     <link rel="stylesheet" href="login.css">
+    
     <title>Login/Sign-up</title>
 </head>
 
 <body>
-   <form class="form_container" action="backend" method="POST">
+   <form class="form_container" onsubmit="validate(login_email,login_pass)" method="POST">
      <h1>Login</h1>
      <div class="container">
        <div class="email"></div>
      <input type="email" name="login_email" id="login_email" required class="form_item item1" placeholder="Email" onclick="ghi()"/>
      </div>
      <input type="password" name="login_pass" id="login_pass" required class="form_item item2" placeholder="Password"/><br />
-     <input type="submit" name="login_sub" id="login_sub" value="Submit" class="form_item item3" />
+     <input type="submit" name="login_sub" id="login_sub" value="Submit" class="item3" o />
      </div>
+     <script>
+     function validate(login_email,login_pass){
+     var user1={
+     mail:"sinhavimla060@gmail.com",
+     p:"12345"
+     };
+     let email=document.getElementById("login_email");
+     let pass=document.getElementById("login_pass");
+     alert(email.value);
+     if(email.value==user1.mail){
+     if(pass.value==user1.p){
+     alert("Welcome back!")
+     redirect();
+     }
+     }
+     }
+     function redirect(){
+       alert("HII");
+       window.location.assign("https://www.google.com");
+     }
+     function ghi(){
+     let x=document.getElementsByClassName("item2");
+     x.style.margin="8px";
+     }
+     </script>
    </form>
-    <script>
-      function ghi(){
-        let x=document.getElementsByClassName("item2");
-        x.style.margin="8px";
-      }
-    </script>
+     
   </body>
 
 </html>

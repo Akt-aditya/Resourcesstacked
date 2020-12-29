@@ -1,6 +1,7 @@
 body{
   margin: 0;
   padding: 10px;
+  color:#22CC7E;
 }
 .form_container{
   display: flex;
@@ -9,9 +10,9 @@ body{
   border-radius: 24px; 
   background-color: #253341;
   justify-content: space-around;
-  padding: 10px;
+  padding: 10vh;
   align-items: center;
-  height: 30vh;
+  height: 50vh;
   width: 40vh;
 }
 .form_item{
@@ -21,6 +22,7 @@ body{
   padding: 8px;
   padding-bottom: 10px;
   border-radius:30px;
+  width: 300px;
 }
 .form_item:hover{
   border-radius: 24px;
@@ -31,9 +33,28 @@ body{
   border-radius:24px;
   border-color: #22CC7E;
   background-color: #F06292;
-  margin: 8px;
+  margin-top: 5px;
+  
 }
 .item3{
-  height: 3vh;
+  height: 4vh;
   text-align: center;
+  align-self: top;
+  padding: 10px;
+}
+@media (min-width: 600px) {
+  .form_container{
+    width:350px;
+  }
+   .form_item{
+  width: 250px;
+  }
+}
+@media (max-width:400px) {
+  .form_container{
+    width: 150px;
+  }
+  .form_item{
+    width: 150px;
+  }
 }
