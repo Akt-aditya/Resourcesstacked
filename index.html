@@ -15,11 +15,10 @@
      <h1>Login</h1>
      <div class="container">
        <div class="email"></div>
-     <input type="email" name="login_email" id="login_email" required class="form_item item1" placeholder="Email" onclick="ghi()"/>
+     <input type="email" name="login_email" id="login_email" required class="form_item item1" placeholder="Email"/>
      </div>
      <input type="password" name="login_pass" id="login_pass" required class="form_item item2" placeholder="Password"/><br />
      <input type="submit" name="login_sub" id="login_sub" value="Submit" class="item3" o />
-     </div>
      <script>
      function validate(login_email,login_pass){
      var user1={
@@ -38,12 +37,9 @@
      }
      function redirect(){
        alert("HII");
-       window.location.assign("https://www.google.com");
+       window.location.assign("https://akt-aditya.github.io/resourcesstacked/dash.html");
      }
-     function ghi(){
-     let x=document.getElementsByClassName("item2");
-     x.style.margin="8px";
-     }
+    
      </script>
    </form>
      
